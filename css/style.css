@@ -25,7 +25,8 @@
     font-weight: lighter;
     font-size: 18px;
     text-transform: uppercase;  
-    position: fixed; 
+    z-index: 1;
+    top: 0;
 
 }
 
@@ -48,6 +49,11 @@ li {
 
 .icon-social {
     padding: 5px;
+}
+
+.hamburguer {
+    padding: 5px;
+    display: none;
 }
 
 .icons {
@@ -170,6 +176,10 @@ li {
 
 /*PAGINA 2*/
 
+.section__container {
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
 .perfil {
     background-image: url(../img/gloriamaria.jpg);
@@ -177,6 +187,7 @@ li {
     height: 100vh;
     display: flex;
     align-items: flex-end;
+    top: 60px;
 }
 
 .titulo__perfil {
@@ -190,23 +201,196 @@ li {
 
 /* SOBRE */
 
+.section__container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.section__img-texto-sobre-citacao {
+    font-family: 'Montserrat';
+    color: #63458A;
+    margin: 40px auto;
+    align-items: center;
+    width: 70%;
+    max-width: 70%;;
+}
+
 .section__img-texto-sobre {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 50%;
+    max-width: 100%;
 }
 
 .section__img-gloria {
-    margin-right: 5%;
-    margin-top: 5%;
+    text-align: center;
+    background: #63458A;
+    border-radius: 5px;
+    width: 100%;    
+    max-width: 100%;
 }
 
 .img__gloria-sobre {
-    width: 200%;
+    width: 100%;
+    border-radius: 100%;
+    padding: 15px; 
+    max-width: 100%;
 }
 
 .section__sobre-gloria {
-    margin-left: 15%;
-    font-size: 140%;
+   font-size: 16px;
+   padding: 20px;
+   max-width: 70%;
+   line-height: 1.2;   
+}
+
+/* CITACAO */
+
+.section__citacao--borda{
+    display: flex;
+    margin-top: 30px;
+    border: 3px solid #E5E5E5;
+    padding: 20px;
+    text-align: center; 
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+/*HISTÓRIA*/
+
+.section__historia {
+    width: 70%;
+    font-family: 'Montserrat';
+    color: #63458A;
+    line-height: 1.5;
+}
+
+.section__titulo-perfil {
+    font-size: 20px;
+}
+
+.section__historia-perfil {
+    margin-top: 15px;
+}
+.section__imagem-passaporte {
+    width: 100%;
+    text-align: center;
+}
+
+.passaporte {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* ASIDE */
+
+aside {
+    max-width: 960px;
+    margin-top: 30px;
+}
+
+.aside__autora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4b7e5;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.imagem__autora {
+    display: flex;
+    margin: 0;
+    
+}
+
+.imagem__foto-autora {
+    width: 40%;
+    height: 40%;
+    max-width: 100%;
+
+}
+
+.info__autora {
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 16px;
+    color: #63458A;
+    margin: 0;
+}
+
+.info__texto-autora {
+    margin: 0;
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.aside__link-github {
+    color: #63458A;
+}
+
+/*BOTÃO FOOTER* (só está perto do footer mas não está dentro do footer*/
+
+.div__btn-footer {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+.btn-footer {
+    align-content: center;
+    border: 1px solid #C083B9;
+    background: #C083B9;
+    padding: 1% 5%;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 800px) {
+
+    .logo {
+        width: 100px;
+        max-width: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 200px;
+        max-width: 130px;
+    }
+
+    .icon-social {
+        display: none;
+    }
+
+    .hamburguer {
+        display: flex;
+        width: 50px;
+        max-width: 50px;  
+    }
+
+    ul {
+        width: 80px;
+    }
+
+    .perfil {
+        background-repeat: no-repeat;
+        background-size: 768px;
+
+    }
+
 }
