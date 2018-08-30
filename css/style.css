@@ -162,16 +162,16 @@ li {
 
 .footer__logo img {
     width: 50%;
+    margin-left: 50px;
 }
 
-.footer__fb-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer__fb-icon-link {
+    margin-right: 10px;
 }
 
-.footer__fb-icon img {
+.footer__fb-icon  {
     width: 10%;
+    margin-top: 7px;
 }
 
 /*PAGINA 2*/
@@ -358,39 +358,59 @@ aside {
 
 /*RESPONSIVO*/
 
-@media (max-width: 800px) {
 
-    .logo {
-        width: 100px;
-        max-width: 70px;
+
+@media (max-width: 1024px) {
+    .perfil {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1024px;
+    }
+
+    .footer__fb-icon {
+        margin: 0 auto;
+        display: flex;
     }
 }
 
 @media (max-width: 768px) {
 
     .logo {
-        width: 200px;
-        max-width: 130px;
+        width: 100%;
     }
 
-    .icon-social {
-        display: none;
+    .menu__item-perfil {
+        font-size: 15px;
     }
 
-    .hamburguer {
-        display: flex;
-        width: 50px;
-        max-width: 50px;  
+    .menu__perfil {
+        justify-content: center;   
     }
 
-    ul {
-        width: 80px;
+    .icons {
+        margin: 10px;
     }
 
-    .perfil {
-        background-repeat: no-repeat;
-        background-size: 768px;
-
+    .footer__menu-item {
+        width: 50%;
+        font-size: 15px;
+        margin: 0;
     }
 
+    .footer__logo {
+        width: 50%;
+    }
+
+    .footer__item {
+        width: 50%;
+    }
+
+    .footer__fb-icon-link {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    
 }
